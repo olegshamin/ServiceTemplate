@@ -12,7 +12,7 @@ protocol PersonServiceAssembly {
     func service() -> PersonService
 }
 
-final class PersonServiceAssemblyImpl: ServiceAssembly, PersonServiceAssembly {
+class PersonServiceAssemblyImpl: ServiceAssembly, PersonServiceAssembly {
     
     // MARK: PersonServiceAssembly
     

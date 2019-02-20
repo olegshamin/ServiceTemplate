@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47E99B4DB04EDC7DC03A58A2 /* Pods_ServiceTemplateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B69DF86ADFED9FE1A98A62 /* Pods_ServiceTemplateTests.framework */; };
 		83B17AB721FCF3FC00CB7FD9 /* APIVersionServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17AB621FCF3FC00CB7FD9 /* APIVersionServiceAssembly.swift */; };
 		83B17AB921FCF42500CB7FD9 /* APIVersionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17AB821FCF42500CB7FD9 /* APIVersionService.swift */; };
 		83B17ABE21FCF46A00CB7FD9 /* LocalStoreServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B17ABD21FCF46A00CB7FD9 /* LocalStoreServiceAssembly.swift */; };
@@ -63,6 +64,16 @@
 		9A4A1043221D5D5C00E0AC1F /* PersonNetworkMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1042221D5D5C00E0AC1F /* PersonNetworkMapper.swift */; };
 		9A4A1045221D635B00E0AC1F /* PersonServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1044221D635B00E0AC1F /* PersonServiceAssembly.swift */; };
 		9A4A1055221D64F200E0AC1F /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1054221D64F200E0AC1F /* BaseTestCase.swift */; };
+		9A4A105A221D6CBE00E0AC1F /* PersonServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1059221D6CBE00E0AC1F /* PersonServiceTests.swift */; };
+		9A4A105D221D6D9500E0AC1F /* personModel.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A4A105C221D6D9500E0AC1F /* personModel.json */; };
+		9A4A105F221D6E5000E0AC1F /* FakePersonServiceAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A105E221D6E5000E0AC1F /* FakePersonServiceAssemblyImpl.swift */; };
+		9A4A1061221D6EFD00E0AC1F /* ServiceAssembly+Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1060221D6EFD00E0AC1F /* ServiceAssembly+Bundle.swift */; };
+		9A4A1063221D6F1F00E0AC1F /* SyncScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1062221D6F1F00E0AC1F /* SyncScheduler.swift */; };
+		9A4A1065221D6F3D00E0AC1F /* OfflineTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1064221D6F3D00E0AC1F /* OfflineTransport.swift */; };
+		9A4A1067221D6F6C00E0AC1F /* Data+ContentsOfFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1066221D6F6C00E0AC1F /* Data+ContentsOfFile.swift */; };
+		9A4A1069221D79A800E0AC1F /* FakeDataTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1068221D79A800E0AC1F /* FakeDataTransport.swift */; };
+		9A4A106B221D7A6D00E0AC1F /* OfflinePersonServiceAssemblyImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A106A221D7A6D00E0AC1F /* OfflinePersonServiceAssemblyImpl.swift */; };
+		9A4A106D221D7A8C00E0AC1F /* MockPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A106C221D7A8C00E0AC1F /* MockPerson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +129,7 @@
 		83D628A121F4B86600C734B7 /* TransportResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportResponse.swift; sourceTree = "<group>"; };
 		83D628A421F4B90E00C734B7 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		83D628A721F4BA6C00C734B7 /* AlamofireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTransport.swift; sourceTree = "<group>"; };
+		842577C71989A2E4276A2D78 /* Pods-ServiceTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ServiceTemplateTests/Pods-ServiceTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		9A4A102A221D4D7F00E0AC1F /* PersonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
 		9A4A102C221D4DB100E0AC1F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		9A4A102E221D4E9800E0AC1F /* RealmPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPerson.swift; sourceTree = "<group>"; };
@@ -135,9 +147,21 @@
 		9A4A104A221D647200E0AC1F /* ServiceTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A4A104E221D647200E0AC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A4A1054221D64F200E0AC1F /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
+		9A4A1059221D6CBE00E0AC1F /* PersonServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonServiceTests.swift; sourceTree = "<group>"; };
+		9A4A105C221D6D9500E0AC1F /* personModel.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = personModel.json; sourceTree = "<group>"; };
+		9A4A105E221D6E5000E0AC1F /* FakePersonServiceAssemblyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakePersonServiceAssemblyImpl.swift; sourceTree = "<group>"; };
+		9A4A1060221D6EFD00E0AC1F /* ServiceAssembly+Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ServiceAssembly+Bundle.swift"; sourceTree = "<group>"; };
+		9A4A1062221D6F1F00E0AC1F /* SyncScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncScheduler.swift; sourceTree = "<group>"; };
+		9A4A1064221D6F3D00E0AC1F /* OfflineTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflineTransport.swift; sourceTree = "<group>"; };
+		9A4A1066221D6F6C00E0AC1F /* Data+ContentsOfFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ContentsOfFile.swift"; sourceTree = "<group>"; };
+		9A4A1068221D79A800E0AC1F /* FakeDataTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeDataTransport.swift; sourceTree = "<group>"; };
+		9A4A106A221D7A6D00E0AC1F /* OfflinePersonServiceAssemblyImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfflinePersonServiceAssemblyImpl.swift; sourceTree = "<group>"; };
+		9A4A106C221D7A8C00E0AC1F /* MockPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPerson.swift; sourceTree = "<group>"; };
+		C2B69DF86ADFED9FE1A98A62 /* Pods_ServiceTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServiceTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2A01625218E9C5732DEA35 /* Pods-ServiceTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-ServiceTemplate/Pods-ServiceTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		DB655BF5AE8F564E3CC77ADB /* Pods_ServiceTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServiceTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3395801BD810AEE05E73A /* Pods-ServiceTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ServiceTemplate/Pods-ServiceTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		F7D11DE4ACEB6A5FAF543B70 /* Pods-ServiceTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ServiceTemplateTests/Pods-ServiceTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +177,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E99B4DB04EDC7DC03A58A2 /* Pods_ServiceTemplateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				DB655BF5AE8F564E3CC77ADB /* Pods_ServiceTemplate.framework */,
+				C2B69DF86ADFED9FE1A98A62 /* Pods_ServiceTemplateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -172,6 +198,8 @@
 			children = (
 				ECB3395801BD810AEE05E73A /* Pods-ServiceTemplate.debug.xcconfig */,
 				CE2A01625218E9C5732DEA35 /* Pods-ServiceTemplate.release.xcconfig */,
+				F7D11DE4ACEB6A5FAF543B70 /* Pods-ServiceTemplateTests.debug.xcconfig */,
+				842577C71989A2E4276A2D78 /* Pods-ServiceTemplateTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -301,7 +329,9 @@
 		83B17AF321FCFF9200CB7FD9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				9A4A1066221D6F6C00E0AC1F /* Data+ContentsOfFile.swift */,
 				83B17AF421FCFFA700CB7FD9 /* Dictionary+Mapping.swift */,
+				9A4A1060221D6EFD00E0AC1F /* ServiceAssembly+Bundle.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -344,7 +374,7 @@
 			isa = PBXGroup;
 			children = (
 				83D6288921F4AFC300C734B7 /* Common */,
-				9A4A1022221D4CD200E0AC1F /* People */,
+				9A4A1022221D4CD200E0AC1F /* Person */,
 				83B17AF121FCFEBB00CB7FD9 /* ServiceFactory.swift */,
 			);
 			path = Service;
@@ -412,6 +442,7 @@
 			children = (
 				83D6289321F4B10800C734B7 /* GCDScheduler.swift */,
 				83D6289121F4B0E300C734B7 /* Scheduler.swift */,
+				9A4A1062221D6F1F00E0AC1F /* SyncScheduler.swift */,
 			);
 			path = Scheduler;
 			sourceTree = "<group>";
@@ -449,6 +480,8 @@
 			isa = PBXGroup;
 			children = (
 				83D628A721F4BA6C00C734B7 /* AlamofireTransport.swift */,
+				9A4A1068221D79A800E0AC1F /* FakeDataTransport.swift */,
+				9A4A1064221D6F3D00E0AC1F /* OfflineTransport.swift */,
 				83D6289F21F4B3C900C734B7 /* Transport.swift */,
 				83D628A121F4B86600C734B7 /* TransportResponse.swift */,
 			);
@@ -463,18 +496,18 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
-		9A4A1022221D4CD200E0AC1F /* People */ = {
+		9A4A1022221D4CD200E0AC1F /* Person */ = {
 			isa = PBXGroup;
 			children = (
 				9A4A1023221D4CED00E0AC1F /* Assembly */,
 				9A4A1029221D4D6700E0AC1F /* Mapper */,
-				9A4A1024221D4CF300E0AC1F /* Mock */,
+				9A4A105B221D6D7700E0AC1F /* Mock */,
 				9A4A1025221D4CF900E0AC1F /* Model */,
 				9A4A1026221D4CFE00E0AC1F /* Repository */,
 				9A4A1027221D4D0400E0AC1F /* Request */,
 				9A4A1028221D4D1000E0AC1F /* Service */,
 			);
-			path = People;
+			path = Person;
 			sourceTree = "<group>";
 		};
 		9A4A1023221D4CED00E0AC1F /* Assembly */ = {
@@ -483,13 +516,6 @@
 				9A4A1044221D635B00E0AC1F /* PersonServiceAssembly.swift */,
 			);
 			path = Assembly;
-			sourceTree = "<group>";
-		};
-		9A4A1024221D4CF300E0AC1F /* Mock */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Mock;
 			sourceTree = "<group>";
 		};
 		9A4A1025221D4CF900E0AC1F /* Model */ = {
@@ -543,8 +569,36 @@
 			children = (
 				9A4A104E221D647200E0AC1F /* Info.plist */,
 				9A4A1054221D64F200E0AC1F /* BaseTestCase.swift */,
+				9A4A1057221D6C9800E0AC1F /* Service */,
 			);
 			path = ServiceTemplateTests;
+			sourceTree = "<group>";
+		};
+		9A4A1057221D6C9800E0AC1F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A1058221D6CAD00E0AC1F /* Person */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9A4A1058221D6CAD00E0AC1F /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A1059221D6CBE00E0AC1F /* PersonServiceTests.swift */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		9A4A105B221D6D7700E0AC1F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A105C221D6D9500E0AC1F /* personModel.json */,
+				9A4A105E221D6E5000E0AC1F /* FakePersonServiceAssemblyImpl.swift */,
+				9A4A106C221D7A8C00E0AC1F /* MockPerson.swift */,
+				9A4A106A221D7A6D00E0AC1F /* OfflinePersonServiceAssemblyImpl.swift */,
+			);
+			path = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -573,9 +627,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A4A1051221D647200E0AC1F /* Build configuration list for PBXNativeTarget "ServiceTemplateTests" */;
 			buildPhases = (
+				3A2664B524939B3D8E30B7A8 /* [CP] Check Pods Manifest.lock */,
 				9A4A1046221D647200E0AC1F /* Sources */,
 				9A4A1047221D647200E0AC1F /* Frameworks */,
 				9A4A1048221D647200E0AC1F /* Resources */,
+				51FCBD3741AF503CA657D34A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -634,6 +690,7 @@
 				83D6288121F4AF6800C734B7 /* LaunchScreen.storyboard in Resources */,
 				83D6287E21F4AF6800C734B7 /* Assets.xcassets in Resources */,
 				83D6287C21F4AF6600C734B7 /* Main.storyboard in Resources */,
+				9A4A105D221D6D9500E0AC1F /* personModel.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +704,56 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3A2664B524939B3D8E30B7A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ServiceTemplateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51FCBD3741AF503CA657D34A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ServiceTemplateTests/Pods-ServiceTemplateTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ServiceTemplateTests/Pods-ServiceTemplateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		5ACF77A37B2083A2058AA5E8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -706,6 +813,7 @@
 			files = (
 				9A4A1037221D508E00E0AC1F /* PersonRepository.swift in Sources */,
 				9A4A103D221D5B7200E0AC1F /* PersonNetworkRepository.swift in Sources */,
+				9A4A106B221D7A6D00E0AC1F /* OfflinePersonServiceAssemblyImpl.swift in Sources */,
 				83B17ACC21FCF53E00CB7FD9 /* URLString.swift in Sources */,
 				83B17ADF21FCFB7B00CB7FD9 /* JSONSerializer.swift in Sources */,
 				83D6289A21F4B1EE00C734B7 /* TransportError.swift in Sources */,
@@ -715,6 +823,7 @@
 				83D628A221F4B86600C734B7 /* TransportResponse.swift in Sources */,
 				83D6289D21F4B35700C734B7 /* ServiceAssembly.swift in Sources */,
 				83B17AE221FCFC2200CB7FD9 /* Repository.swift in Sources */,
+				9A4A1061221D6EFD00E0AC1F /* ServiceAssembly+Bundle.swift in Sources */,
 				83B17AE421FCFC4C00CB7FD9 /* NetworkRepository.swift in Sources */,
 				83B17AD321FCF6E600CB7FD9 /* Keychain.swift in Sources */,
 				83D628A821F4BA6C00C734B7 /* AlamofireTransport.swift in Sources */,
@@ -723,12 +832,15 @@
 				83B17AE721FCFD9300CB7FD9 /* DatabaseRepository.swift in Sources */,
 				83B17AD621FCF7DC00CB7FD9 /* Deserializer.swift in Sources */,
 				9A4A1033221D4FB800E0AC1F /* ServerField.swift in Sources */,
+				9A4A1067221D6F6C00E0AC1F /* Data+ContentsOfFile.swift in Sources */,
 				83D628A521F4B90E00C734B7 /* Request.swift in Sources */,
 				83D6289721F4B16C00C734B7 /* Result.swift in Sources */,
 				83B17ACA21FCF51700CB7FD9 /* HostService.swift in Sources */,
 				9A4A1043221D5D5C00E0AC1F /* PersonNetworkMapper.swift in Sources */,
 				83D6287921F4AF6600C734B7 /* ViewController.swift in Sources */,
 				9A4A1039221D574600E0AC1F /* CreatePersonRequest.swift in Sources */,
+				9A4A1069221D79A800E0AC1F /* FakeDataTransport.swift in Sources */,
+				9A4A1063221D6F1F00E0AC1F /* SyncScheduler.swift in Sources */,
 				9A4A102B221D4D7F00E0AC1F /* PersonService.swift in Sources */,
 				83B17ACF21FCF65300CB7FD9 /* KeychainService.swift in Sources */,
 				9A4A1035221D505400E0AC1F /* PersonServiceImpl.swift in Sources */,
@@ -739,8 +851,10 @@
 				9A4A1031221D4F2100E0AC1F /* PersonRequest.swift in Sources */,
 				83B17AF521FCFFA700CB7FD9 /* Dictionary+Mapping.swift in Sources */,
 				83B17AC321FCF4BE00CB7FD9 /* StoreKey.swift in Sources */,
+				9A4A1065221D6F3D00E0AC1F /* OfflineTransport.swift in Sources */,
 				9A4A1041221D5C2F00E0AC1F /* PersonDatabaseMapper.swift in Sources */,
 				83B17AF221FCFEBB00CB7FD9 /* ServiceFactory.swift in Sources */,
+				9A4A106D221D7A8C00E0AC1F /* MockPerson.swift in Sources */,
 				9A4A1045221D635B00E0AC1F /* PersonServiceAssembly.swift in Sources */,
 				83B17AF721FCFFCA00CB7FD9 /* MapperError.swift in Sources */,
 				83B17AEE21FCFE4400CB7FD9 /* RequestErrorNetworkMapper.swift in Sources */,
@@ -755,6 +869,7 @@
 				83B17ADA21FCFB2E00CB7FD9 /* DeserializerError.swift in Sources */,
 				83B17AF021FCFE6600CB7FD9 /* RequestError.swift in Sources */,
 				83B17ABE21FCF46A00CB7FD9 /* LocalStoreServiceAssembly.swift in Sources */,
+				9A4A105F221D6E5000E0AC1F /* FakePersonServiceAssemblyImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -762,6 +877,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4A105A221D6CBE00E0AC1F /* PersonServiceTests.swift in Sources */,
 				9A4A1055221D64F200E0AC1F /* BaseTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -952,6 +1068,7 @@
 		};
 		9A4A1052221D647200E0AC1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D11DE4ACEB6A5FAF543B70 /* Pods-ServiceTemplateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -975,6 +1092,7 @@
 		};
 		9A4A1053221D647200E0AC1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 842577C71989A2E4276A2D78 /* Pods-ServiceTemplateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;

@@ -33,7 +33,9 @@ final class PersonServiceImpl: PersonService {
     
     // MARK: AsteroidService
     
-    func person(with request: PersonRequest, completion: @escaping PersonResultHandler) {
+    func person(with id: String, completion: @escaping PersonResultHandler) {
+        
+        let request = PersonRequest(id: id)
         scheduler.doInBg { [weak self] in
             self?.networkRepository.person(with: request, completion: { result in
                 self?.handle(personNetworkResult: result, request: request, completion: completion)
@@ -52,6 +54,8 @@ final class PersonServiceImpl: PersonService {
             guard let self = self else {
                 return
             }
+            self.databaseRepository.create(person, completion: { _ in })
+            
             self.networkRepository.create(with: request, completion: { result in
                 self.handle(result: result, scheduler: self.scheduler, completion: completion)
             })
@@ -72,11 +76,9 @@ final class PersonServiceImpl: PersonService {
             handle(result: result, scheduler: scheduler, completion: completion)
 
         case .failure(let error):
-            handle(networkError: error, scheduler: scheduler, completion: completion) {
-                databaseRepository.person(with: request, completion: { [weak self] result in
-                    self?.handle(personDatabaseResult: result, networkError: error, completion: completion)
-                })
-            }
+            databaseRepository.person(with: request, completion: { [weak self] result in
+                self?.handle(personDatabaseResult: result, networkError: error, completion: completion)
+            })
         }
     }
 

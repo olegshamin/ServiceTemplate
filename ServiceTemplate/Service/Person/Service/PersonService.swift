@@ -12,7 +12,7 @@ typealias PersonResult = Result<Person>
 typealias PersonResultHandler = (PersonResult) -> Void
 
 protocol PersonService: Service {
-    func person(with request: PersonRequest,
+    func person(with id: String,
                 completion: @escaping PersonResultHandler)
     func create(_ person: Person,
                 completion: @escaping VoidResultHandler)
