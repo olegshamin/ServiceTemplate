@@ -14,4 +14,5 @@ Every service has few layers:
 4. Request. For every request to server we create custom Request object inherited from parent class. Here we setup path, method (get, post etc), parameters, headers
 
 We have protocol `Transport` for requests to server, if we want we can implement different ways for request. In this case implemented AlamofireTranposrt but we can use URLSession too.
+<br><br>
 We have `Scheduler` for working in background or in main thread. Now it's implemented with GCD but can be easily change to NSOperation or whatever. For test purpose we have SyncScheduler where all tasks executing one by one.
