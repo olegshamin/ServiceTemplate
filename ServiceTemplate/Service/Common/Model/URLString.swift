@@ -11,4 +11,6 @@ import Foundation
 enum URLString {
     
     static let host = "https://google.com"
+    static let person = "/person"
+    static let createPerson = "\(person)/create"
 }

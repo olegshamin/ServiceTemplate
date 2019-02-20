@@ -34,6 +34,10 @@ class ServiceAssembly {
         return JSONDeserializer()
     }
     
+    func serializer() -> Serializer {
+        return JSONSerializer()
+    }
+    
     // MARK: Network Repository Error Mappers
     
     func requestErrorNetworkMapper() -> RequestErrorNetworkMapper {

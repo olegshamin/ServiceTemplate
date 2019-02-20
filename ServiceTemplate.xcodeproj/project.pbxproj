@@ -48,7 +48,32 @@
 		83D628A521F4B90E00C734B7 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D628A421F4B90E00C734B7 /* Request.swift */; };
 		83D628A821F4BA6C00C734B7 /* AlamofireTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D628A721F4BA6C00C734B7 /* AlamofireTransport.swift */; };
 		88463D1502549729035DC531 /* Pods_ServiceTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB655BF5AE8F564E3CC77ADB /* Pods_ServiceTemplate.framework */; };
+		9A4A102B221D4D7F00E0AC1F /* PersonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A102A221D4D7F00E0AC1F /* PersonService.swift */; };
+		9A4A102D221D4DB100E0AC1F /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A102C221D4DB100E0AC1F /* Person.swift */; };
+		9A4A102F221D4E9800E0AC1F /* RealmPerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A102E221D4E9800E0AC1F /* RealmPerson.swift */; };
+		9A4A1031221D4F2100E0AC1F /* PersonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1030221D4F2100E0AC1F /* PersonRequest.swift */; };
+		9A4A1033221D4FB800E0AC1F /* ServerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1032221D4FB800E0AC1F /* ServerField.swift */; };
+		9A4A1035221D505400E0AC1F /* PersonServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1034221D505400E0AC1F /* PersonServiceImpl.swift */; };
+		9A4A1037221D508E00E0AC1F /* PersonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1036221D508E00E0AC1F /* PersonRepository.swift */; };
+		9A4A1039221D574600E0AC1F /* CreatePersonRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1038221D574600E0AC1F /* CreatePersonRequest.swift */; };
+		9A4A103B221D596800E0AC1F /* SerializerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A103A221D596800E0AC1F /* SerializerError.swift */; };
+		9A4A103D221D5B7200E0AC1F /* PersonNetworkRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A103C221D5B7200E0AC1F /* PersonNetworkRepository.swift */; };
+		9A4A103F221D5B7E00E0AC1F /* PersonDatabaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A103E221D5B7E00E0AC1F /* PersonDatabaseRepository.swift */; };
+		9A4A1041221D5C2F00E0AC1F /* PersonDatabaseMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1040221D5C2F00E0AC1F /* PersonDatabaseMapper.swift */; };
+		9A4A1043221D5D5C00E0AC1F /* PersonNetworkMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1042221D5D5C00E0AC1F /* PersonNetworkMapper.swift */; };
+		9A4A1045221D635B00E0AC1F /* PersonServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1044221D635B00E0AC1F /* PersonServiceAssembly.swift */; };
+		9A4A1055221D64F200E0AC1F /* BaseTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4A1054221D64F200E0AC1F /* BaseTestCase.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A4A104F221D647200E0AC1F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83D6286B21F4AF6600C734B7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83D6287221F4AF6600C734B7;
+			remoteInfo = ServiceTemplate;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		83B17AB621FCF3FC00CB7FD9 /* APIVersionServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIVersionServiceAssembly.swift; sourceTree = "<group>"; };
@@ -93,6 +118,23 @@
 		83D628A121F4B86600C734B7 /* TransportResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportResponse.swift; sourceTree = "<group>"; };
 		83D628A421F4B90E00C734B7 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		83D628A721F4BA6C00C734B7 /* AlamofireTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireTransport.swift; sourceTree = "<group>"; };
+		9A4A102A221D4D7F00E0AC1F /* PersonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonService.swift; sourceTree = "<group>"; };
+		9A4A102C221D4DB100E0AC1F /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		9A4A102E221D4E9800E0AC1F /* RealmPerson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmPerson.swift; sourceTree = "<group>"; };
+		9A4A1030221D4F2100E0AC1F /* PersonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRequest.swift; sourceTree = "<group>"; };
+		9A4A1032221D4FB800E0AC1F /* ServerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerField.swift; sourceTree = "<group>"; };
+		9A4A1034221D505400E0AC1F /* PersonServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonServiceImpl.swift; sourceTree = "<group>"; };
+		9A4A1036221D508E00E0AC1F /* PersonRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonRepository.swift; sourceTree = "<group>"; };
+		9A4A1038221D574600E0AC1F /* CreatePersonRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePersonRequest.swift; sourceTree = "<group>"; };
+		9A4A103A221D596800E0AC1F /* SerializerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializerError.swift; sourceTree = "<group>"; };
+		9A4A103C221D5B7200E0AC1F /* PersonNetworkRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonNetworkRepository.swift; sourceTree = "<group>"; };
+		9A4A103E221D5B7E00E0AC1F /* PersonDatabaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDatabaseRepository.swift; sourceTree = "<group>"; };
+		9A4A1040221D5C2F00E0AC1F /* PersonDatabaseMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDatabaseMapper.swift; sourceTree = "<group>"; };
+		9A4A1042221D5D5C00E0AC1F /* PersonNetworkMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonNetworkMapper.swift; sourceTree = "<group>"; };
+		9A4A1044221D635B00E0AC1F /* PersonServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonServiceAssembly.swift; sourceTree = "<group>"; };
+		9A4A104A221D647200E0AC1F /* ServiceTemplateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceTemplateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A4A104E221D647200E0AC1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A4A1054221D64F200E0AC1F /* BaseTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTestCase.swift; sourceTree = "<group>"; };
 		CE2A01625218E9C5732DEA35 /* Pods-ServiceTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-ServiceTemplate/Pods-ServiceTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		DB655BF5AE8F564E3CC77ADB /* Pods_ServiceTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ServiceTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3395801BD810AEE05E73A /* Pods-ServiceTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ServiceTemplate/Pods-ServiceTemplate.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +146,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				88463D1502549729035DC531 /* Pods_ServiceTemplate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4A1047221D647200E0AC1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +204,7 @@
 		83B17AC121FCF4AE00CB7FD9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9A4A1032221D4FB800E0AC1F /* ServerField.swift */,
 				83B17AC221FCF4BE00CB7FD9 /* StoreKey.swift */,
 				83B17ACB21FCF53E00CB7FD9 /* URLString.swift */,
 			);
@@ -260,6 +310,7 @@
 			isa = PBXGroup;
 			children = (
 				83D6287521F4AF6600C734B7 /* ServiceTemplate */,
+				9A4A104B221D647200E0AC1F /* ServiceTemplateTests */,
 				83D6287421F4AF6600C734B7 /* Products */,
 				689C8F54C2E0FDF4D011CF38 /* Pods */,
 				2D707E1CE733F5E15A36E1BB /* Frameworks */,
@@ -270,6 +321,7 @@
 			isa = PBXGroup;
 			children = (
 				83D6287321F4AF6600C734B7 /* ServiceTemplate.app */,
+				9A4A104A221D647200E0AC1F /* ServiceTemplateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,6 +344,7 @@
 			isa = PBXGroup;
 			children = (
 				83D6288921F4AFC300C734B7 /* Common */,
+				9A4A1022221D4CD200E0AC1F /* People */,
 				83B17AF121FCFEBB00CB7FD9 /* ServiceFactory.swift */,
 			);
 			path = Service;
@@ -378,6 +431,7 @@
 				83B17AF621FCFFCA00CB7FD9 /* MapperError.swift */,
 				83B17AE821FCFDB800CB7FD9 /* RepositoryError.swift */,
 				83B17AEF21FCFE6600CB7FD9 /* RequestError.swift */,
+				9A4A103A221D596800E0AC1F /* SerializerError.swift */,
 				83D6289921F4B1EE00C734B7 /* TransportError.swift */,
 			);
 			path = Error;
@@ -409,6 +463,90 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		9A4A1022221D4CD200E0AC1F /* People */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A1023221D4CED00E0AC1F /* Assembly */,
+				9A4A1029221D4D6700E0AC1F /* Mapper */,
+				9A4A1024221D4CF300E0AC1F /* Mock */,
+				9A4A1025221D4CF900E0AC1F /* Model */,
+				9A4A1026221D4CFE00E0AC1F /* Repository */,
+				9A4A1027221D4D0400E0AC1F /* Request */,
+				9A4A1028221D4D1000E0AC1F /* Service */,
+			);
+			path = People;
+			sourceTree = "<group>";
+		};
+		9A4A1023221D4CED00E0AC1F /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A1044221D635B00E0AC1F /* PersonServiceAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		9A4A1024221D4CF300E0AC1F /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		9A4A1025221D4CF900E0AC1F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A102C221D4DB100E0AC1F /* Person.swift */,
+				9A4A102E221D4E9800E0AC1F /* RealmPerson.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9A4A1026221D4CFE00E0AC1F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A103E221D5B7E00E0AC1F /* PersonDatabaseRepository.swift */,
+				9A4A103C221D5B7200E0AC1F /* PersonNetworkRepository.swift */,
+				9A4A1036221D508E00E0AC1F /* PersonRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9A4A1027221D4D0400E0AC1F /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A1038221D574600E0AC1F /* CreatePersonRequest.swift */,
+				9A4A1030221D4F2100E0AC1F /* PersonRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		9A4A1028221D4D1000E0AC1F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A102A221D4D7F00E0AC1F /* PersonService.swift */,
+				9A4A1034221D505400E0AC1F /* PersonServiceImpl.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9A4A1029221D4D6700E0AC1F /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A1040221D5C2F00E0AC1F /* PersonDatabaseMapper.swift */,
+				9A4A1042221D5D5C00E0AC1F /* PersonNetworkMapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		9A4A104B221D647200E0AC1F /* ServiceTemplateTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A4A104E221D647200E0AC1F /* Info.plist */,
+				9A4A1054221D64F200E0AC1F /* BaseTestCase.swift */,
+			);
+			path = ServiceTemplateTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -431,6 +569,24 @@
 			productReference = 83D6287321F4AF6600C734B7 /* ServiceTemplate.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9A4A1049221D647200E0AC1F /* ServiceTemplateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A4A1051221D647200E0AC1F /* Build configuration list for PBXNativeTarget "ServiceTemplateTests" */;
+			buildPhases = (
+				9A4A1046221D647200E0AC1F /* Sources */,
+				9A4A1047221D647200E0AC1F /* Frameworks */,
+				9A4A1048221D647200E0AC1F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A4A1050221D647200E0AC1F /* PBXTargetDependency */,
+			);
+			name = ServiceTemplateTests;
+			productName = ServiceTemplateTests;
+			productReference = 9A4A104A221D647200E0AC1F /* ServiceTemplateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -443,6 +599,11 @@
 				TargetAttributes = {
 					83D6287221F4AF6600C734B7 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					9A4A1049221D647200E0AC1F = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
+						TestTargetID = 83D6287221F4AF6600C734B7;
 					};
 				};
 			};
@@ -460,6 +621,7 @@
 			projectRoot = "";
 			targets = (
 				83D6287221F4AF6600C734B7 /* ServiceTemplate */,
+				9A4A1049221D647200E0AC1F /* ServiceTemplateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -472,6 +634,13 @@
 				83D6288121F4AF6800C734B7 /* LaunchScreen.storyboard in Resources */,
 				83D6287E21F4AF6800C734B7 /* Assets.xcassets in Resources */,
 				83D6287C21F4AF6600C734B7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A4A1048221D647200E0AC1F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,9 +704,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4A1037221D508E00E0AC1F /* PersonRepository.swift in Sources */,
+				9A4A103D221D5B7200E0AC1F /* PersonNetworkRepository.swift in Sources */,
 				83B17ACC21FCF53E00CB7FD9 /* URLString.swift in Sources */,
 				83B17ADF21FCFB7B00CB7FD9 /* JSONSerializer.swift in Sources */,
 				83D6289A21F4B1EE00C734B7 /* TransportError.swift in Sources */,
+				9A4A103F221D5B7E00E0AC1F /* PersonDatabaseRepository.swift in Sources */,
 				83D628A021F4B3CA00C734B7 /* Transport.swift in Sources */,
 				83B17ADD21FCFB6F00CB7FD9 /* Serializer.swift in Sources */,
 				83D628A221F4B86600C734B7 /* TransportResponse.swift in Sources */,
@@ -550,32 +722,59 @@
 				83B17AEC21FCFE2D00CB7FD9 /* Mapper.swift in Sources */,
 				83B17AE721FCFD9300CB7FD9 /* DatabaseRepository.swift in Sources */,
 				83B17AD621FCF7DC00CB7FD9 /* Deserializer.swift in Sources */,
+				9A4A1033221D4FB800E0AC1F /* ServerField.swift in Sources */,
 				83D628A521F4B90E00C734B7 /* Request.swift in Sources */,
 				83D6289721F4B16C00C734B7 /* Result.swift in Sources */,
 				83B17ACA21FCF51700CB7FD9 /* HostService.swift in Sources */,
+				9A4A1043221D5D5C00E0AC1F /* PersonNetworkMapper.swift in Sources */,
 				83D6287921F4AF6600C734B7 /* ViewController.swift in Sources */,
+				9A4A1039221D574600E0AC1F /* CreatePersonRequest.swift in Sources */,
+				9A4A102B221D4D7F00E0AC1F /* PersonService.swift in Sources */,
 				83B17ACF21FCF65300CB7FD9 /* KeychainService.swift in Sources */,
+				9A4A1035221D505400E0AC1F /* PersonServiceImpl.swift in Sources */,
 				83D6289421F4B10800C734B7 /* GCDScheduler.swift in Sources */,
 				83D6289221F4B0E300C734B7 /* Scheduler.swift in Sources */,
 				83D6287721F4AF6600C734B7 /* AppDelegate.swift in Sources */,
 				83B17AC021FCF47F00CB7FD9 /* LocalStoreService.swift in Sources */,
+				9A4A1031221D4F2100E0AC1F /* PersonRequest.swift in Sources */,
 				83B17AF521FCFFA700CB7FD9 /* Dictionary+Mapping.swift in Sources */,
 				83B17AC321FCF4BE00CB7FD9 /* StoreKey.swift in Sources */,
+				9A4A1041221D5C2F00E0AC1F /* PersonDatabaseMapper.swift in Sources */,
 				83B17AF221FCFEBB00CB7FD9 /* ServiceFactory.swift in Sources */,
+				9A4A1045221D635B00E0AC1F /* PersonServiceAssembly.swift in Sources */,
 				83B17AF721FCFFCA00CB7FD9 /* MapperError.swift in Sources */,
 				83B17AEE21FCFE4400CB7FD9 /* RequestErrorNetworkMapper.swift in Sources */,
 				83D6288F21F4B0BC00C734B7 /* Service.swift in Sources */,
+				9A4A103B221D596800E0AC1F /* SerializerError.swift in Sources */,
 				83B17AB721FCF3FC00CB7FD9 /* APIVersionServiceAssembly.swift in Sources */,
+				9A4A102D221D4DB100E0AC1F /* Person.swift in Sources */,
 				83B17AB921FCF42500CB7FD9 /* APIVersionService.swift in Sources */,
 				83B17AE921FCFDB800CB7FD9 /* RepositoryError.swift in Sources */,
 				83B17AD821FCF7F800CB7FD9 /* JSONDeserializer.swift in Sources */,
+				9A4A102F221D4E9800E0AC1F /* RealmPerson.swift in Sources */,
 				83B17ADA21FCFB2E00CB7FD9 /* DeserializerError.swift in Sources */,
 				83B17AF021FCFE6600CB7FD9 /* RequestError.swift in Sources */,
 				83B17ABE21FCF46A00CB7FD9 /* LocalStoreServiceAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9A4A1046221D647200E0AC1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A4A1055221D64F200E0AC1F /* BaseTestCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A4A1050221D647200E0AC1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83D6287221F4AF6600C734B7 /* ServiceTemplate */;
+			targetProxy = 9A4A104F221D647200E0AC1F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83D6287A21F4AF6600C734B7 /* Main.storyboard */ = {
@@ -751,6 +950,51 @@
 			};
 			name = Release;
 		};
+		9A4A1052221D647200E0AC1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = G548HJ9ST6;
+				INFOPLIST_FILE = ServiceTemplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = olegshamin.ServiceTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServiceTemplate.app/ServiceTemplate";
+			};
+			name = Debug;
+		};
+		9A4A1053221D647200E0AC1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = G548HJ9ST6;
+				INFOPLIST_FILE = ServiceTemplateTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = olegshamin.ServiceTemplateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ServiceTemplate.app/ServiceTemplate";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -768,6 +1012,15 @@
 			buildConfigurations = (
 				83D6288621F4AF6800C734B7 /* Debug */,
 				83D6288721F4AF6800C734B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A4A1051221D647200E0AC1F /* Build configuration list for PBXNativeTarget "ServiceTemplateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A4A1052221D647200E0AC1F /* Debug */,
+				9A4A1053221D647200E0AC1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

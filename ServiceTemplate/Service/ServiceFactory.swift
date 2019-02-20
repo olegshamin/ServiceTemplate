@@ -18,6 +18,7 @@ final class ServiceFactory {
     let localStoreService: LocalStoreService
     let hostService: HostService
     let apiVersionService: APIVersionService
+    let personService: PersonService
     
     // MARK: Initialization
     
@@ -36,5 +37,6 @@ final class ServiceFactory {
         self.localStoreService = localStoreServiceAssembly.service()
         self.hostService = hostServiceAssembly.service()
         self.apiVersionService = apiVersionServiceAssembly.service()
+        self.personService = PersonServiceAssemblyImpl().service()
     }
 }
